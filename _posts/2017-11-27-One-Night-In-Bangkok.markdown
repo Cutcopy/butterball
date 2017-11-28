@@ -4,7 +4,7 @@ title:  "How to Break Down an Opposing Defense in 5 Easy Steps for Healthcare"
 excerpt: "Mistakes are par for the course when taking on any new skill—watching video is no exception. Check out these coaches’ suggestions to avoid the common missteps"
 date:   2017-11-27 14:32:49 -0600
 author: Jamee Kugler
-img_preview: "http://fillmurray.com/1000/800"
+img_preview: "http://fillmurray.com/1000/500"
 categories: Taggy-tag Super-Tag Turbo-Tag
 ---
 Chamomile is known worldwide to be a calming sleep aid, a remedy to ease an upset stomach, and for its wonderful anti-inflammatory and anti-spasmolytic properties. There are, however, many types of chamomile: Roman chamomile, Anthemis nobilis; German chamomile, Matricaria recutita; true Moroccan chamomile, Tanacetum annuum. Beyond these three basic types, German chamomile can also be called Hungarian or blue chamomile, while another species of chamomile called Moroccan is actually a different variety (Ormensis multicaulis) that is grown in Morocco. Ormensis multicaulis does not have the ink-blue color of the true Moroccan chamomile that is Tanacetum annuum, also called blue tansy. Each chamomile is a different variety, however they all have similar constituents as well as some likenesses in appearance.
