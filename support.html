@@ -1,4 +1,152 @@
 ---
 layout: default
 title: Support
+navigation_weight: 6
 ---
+
+<section class="jumbotron jumbotron-fluid">
+  <div class="container text-center">
+    <h1 class="display-3 text-uppercase">Support</h1>
+  </div>
+</section>
+
+<section class="container">
+  <div class="row">
+    <div class="col-xl-12">
+      <h2 class="text-uppercase">News & Release Notes</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xl-12">
+      <ul class="list-unstyled">
+        {% for post in site.posts %}
+          {% if post.categories contains 'News'%}
+              <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <div class="row">
+    <div class="col-xl-12">
+      <h2 class="text-uppercase">Questions about Hatcx | Cost?</h2>
+    </div>
+  </div>
+  <div class="card-deck-wrapper mb-3">
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top" src="http://fillmurray.com/350/180" alt="Card image cap">
+        <div class="card-block text-center">
+          <h4 class="card-title mt-3">Finding the Price of a Medical Service</h4>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="http://fillmurray.com/350/180" alt="Card image cap">
+        <div class="card-block text-center">
+          <h4 class="card-title mt-3">Finding a doctor</h4>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="http://fillmurray.com/350/180" alt="Card image cap">
+        <div class="card-block text-center">
+          <h4 class="card-title mt-3">Searching by Specialty</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-deck-wrapper mb-3">
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top" src="http://fillmurray.com/350/180" alt="Card image cap">
+        <div class="card-block text-center">
+          <h4 class="card-title mt-3">Lowering your costs</h4>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="http://fillmurray.com/350/180" alt="Card image cap">
+        <div class="card-block text-center">
+          <h4 class="card-title mt-3">Bookmarking your results</h4>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="http://fillmurray.com/350/180" alt="Card image cap">
+        <div class="card-block text-center">
+          <h4 class="card-title mt-3">Missing members of your plan</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-deck-wrapper mb-3">
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top" src="http://fillmurray.com/350/180" alt="Card image cap">
+        <div class="card-block text-center">
+          <h4 class="card-title mt-3">Unsupported plans</h4>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="http://fillmurray.com/350/180" alt="Card image cap">
+        <div class="card-block text-center">
+          <h4 class="card-title mt-3">Changing your search location</h4>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="http://fillmurray.com/350/180" alt="Card image cap">
+        <div class="card-block text-center">
+          <h4 class="card-title mt-3">Adding reviews</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-deck-wrapper mb-3">
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top" src="http://fillmurray.com/350/180" alt="Card image cap">
+        <div class="card-block text-center">
+          <h4 class="card-title mt-3">Forgot your password?</h4>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="http://fillmurray.com/350/180" alt="Card image cap">
+        <div class="card-block text-center">
+          <h4 class="card-title mt-3">Getting an error?</h4>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="http://fillmurray.com/350/180" alt="Card image cap">
+        <div class="card-block text-center">
+          <h4 class="card-title mt-3">Breaking down your price</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container my-5">
+  <div class="row text-center">
+    <div class="col my-3">
+      <h2>STILL HAVING ISSUES? <br> CONTACT OUR SUPPORT TEAM</h2>
+    </div>
+  </div>
+  <div class="row">
+      <form class="container">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputname">Name</label>
+          <input type="type" class="form-control" id="inputName" placeholder="Name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Message</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Message</textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg btn-block">Request Demo</button>
+    </form>
+  </div>
+</section>
