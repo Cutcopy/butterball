@@ -23,92 +23,26 @@ navigation_weight: 5
   <div class="row blog feed mb-3">
     <div class="col-xl-8">
       <!-- article rack -->
-      <div class="row mb-3">
 
-        <div class="col">
-          <div class="card">
-            <a href="#">
-              <img class="card-img-top" src="http://fillmurray.com/360/170" alt="Card image cap">
-            </a>
-            <div class="card-body">
-              <a href="#">
-                <p class="card-text">How to Break Down an Opposing Defense in 5 Easy Steps for Healthcare</p>
-              </a>
-              <hr>
-              <p><span>11.6</span> | <a href="#"> Jamee Kugler</a></p>
+        <div class="row mb-3">
+          <!-- is there any good way to do a loop, where it generates a row, for every two articles loaded? -->
+          {% for post in site.posts  %}
+            <div class="col-xl-6 mb-3">
+              <div class="card">
+                <a href="{{post.url}}">
+                  <img class="card-img-top" src="{{post.img_preview}}" alt="Card image cap" style="height: 180px;">
+                </a>
+                <div class="card-body">
+                  <a href="{{post.url}}">
+                    <p class="card-text">How to Break Down an Opposing Defense in 5 Easy Steps for Healthcare</p>
+                  </a>
+                  <hr>
+                  <p><span>{{post.date | date: "%m.%d.%y" }}</span> | <a href="#"> {{post.author}}</a></p>
+                </div>
+              </div>
             </div>
-          </div>
+          {% endfor %}
         </div>
-
-        <div class="col">
-          <div class="card">
-            <a href="#">
-              <img class="card-img-top" src="http://fillmurray.com/360/170" alt="Card image cap">
-            </a>
-            <div class="card-body">
-              <a href="#">
-                <p class="card-text">How to Break Down an Opposing Defense in 5 Easy Steps for Healthcare</p>
-              </a>
-              <hr>
-              <p><span>11.6</span> | <a href="#"> Jamee Kugler</a></p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <!-- article rack -->
-      <div class="row mb-3">
-
-        <div class="col">
-          <div class="card">
-            <a href="#">
-              <img class="card-img-top" src="http://fillmurray.com/360/170" alt="Card image cap">
-            </a>
-            <div class="card-body">
-              <a href="#">
-                <p class="card-text">How to Break Down an Opposing Defense in 5 Easy Steps for Healthcare</p>
-              </a>
-              <hr>
-              <p><span>11.6</span> | <a href="#"> Jamee Kugler</a></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card">
-            <a href="#">
-              <img class="card-img-top" src="http://fillmurray.com/360/170" alt="Card image cap">
-            </a>
-            <div class="card-body">
-              <a href="#">
-                <p class="card-text">How to Break Down an Opposing Defense in 5 Easy Steps for Healthcare</p>
-              </a>
-              <hr>
-              <p><span>11.6</span> | <a href="#"> Jamee Kugler</a></p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <!-- article rack -->
-      <div class="row mb-3">
-
-        <div class="col">
-          <div class="card">
-            <a href="#">
-              <img class="card-img-top" src="http://fillmurray.com/360/170" alt="Card image cap">
-            </a>
-            <div class="card-body">
-              <a href="#">
-                <p class="card-text">How to Break Down an Opposing Defense in 5 Easy Steps for Healthcare</p>
-              </a>
-              <hr>
-              <p><span>11.6</span> | <a href="#"> Jamee Kugler</a></p>
-            </div>
-          </div>
-        </div>
-
-      </div>
       <!-- load button -->
       <div class="row">
        <div class="col align-self-center text-center">
@@ -132,17 +66,9 @@ navigation_weight: 5
       <div class="row">
         <h4 class="text-uppercase">Explore Our Categories</h4>
         <ul>
-          <li><a href="">Taggy Tag</a></li>
-          <li><a href="">Taggy Tag</a></li>
-          <li><a href="">Taggy Tag</a></li>
-          <li><a href="">Taggy Tag</a></li>
-          <li><a href="">Taggy Tag</a></li>
-          <li><a href="">Taggy Tag</a></li>
-          <li><a href="">Taggy Tag</a></li>
-          <li><a href="">Taggy Tag</a></li>
-          <li><a href="">Taggy Tag</a></li>
-          <li><a href="">Taggy Tag</a></li>
-        </ul>
+          {% for category in site.categories %}
+          <li><a href="/category/{{ category[0] }}/" style="text-decoration: none;">{{ category[0] | Capitalize }}</a></li>
+          {% endfor %}
       </div>
     </aside>
   </div>
